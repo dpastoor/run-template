@@ -2,13 +2,13 @@
 
 like aliases/makefiles, but way simpler. Keep a file of template scripts to run on the shell and call them by name
 
-rtconfig.toml
+rtcommands.toml
 
 ```
 rocker = "docker run --rm -it osmosisfoundation/rocker /bin/sh"
 gcm = [
     "git add .",
-    "git commit -m {{message}}
+    "git commit -m {{.message}}
 ]
 ```
 
